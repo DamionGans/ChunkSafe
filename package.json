@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Cross-platform Minecraft save synchroniser with version management, folder/network sync, and peer-to-peer sync.",
   "main": "dist/main/index.js",
-  "author": "ChunkSafe",
+  "author": {
+    "name": "Damion Gans",
+    "email": "61085570+DamionGans@users.noreply.github.com"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "concurrently -k \"npm run dev:renderer\" \"npm run build:main && npm run dev:electron\"",
@@ -16,9 +19,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.main.json --noEmit && tsc -p tsconfig.renderer.json --noEmit",
-    "dist:win": "npm run build && electron-builder --win",
-    "dist:mac": "npm run build && electron-builder --mac",
-    "dist:linux": "npm run build && electron-builder --linux"
+    "dist:win": "npm run build && electron-builder --win --publish never",
+    "dist:mac": "npm run build && electron-builder --mac --publish never",
+    "dist:linux": "npm run build && electron-builder --linux --publish never"
   },
   "dependencies": {
     "lucide-react": "^0.469.0"

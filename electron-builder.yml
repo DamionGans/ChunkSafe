@@ -17,6 +17,7 @@ win:
     - portable
 linux:
   category: Utility
+  maintainer: Damion Gans <61085570+DamionGans@users.noreply.github.com>
   target:
     - AppImage
     - deb
