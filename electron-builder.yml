@@ -1,0 +1,22 @@
+appId: com.chunksafe.app
+productName: ChunkSafe
+copyright: Copyright © 2026 ChunkSafe
+directories:
+  output: release
+files:
+  - dist/**/*
+  - package.json
+mac:
+  category: public.app-category.utilities
+  target:
+    - dmg
+    - zip
+win:
+  target:
+    - nsis
+    - portable
+linux:
+  category: Utility
+  target:
+    - AppImage
+    - deb
